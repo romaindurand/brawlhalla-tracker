@@ -1,0 +1,36 @@
+[
+  {
+    "win": false,
+    "teamElo": 1578,
+    "names": [
+      "sasek",
+      "nakola",
+      "jone",
+      "kaivel"
+    ],
+    "individualElos": [
+      1610,
+      1643,
+      1655,
+      1627
+    ],
+    "date": "2021-07-24T16:29:17.000Z"
+  },
+  {
+    "win": false,
+    "teamElo": 1578,
+    "names": [
+      "sasek",
+      "nakola",
+      "jone",
+      "kaivel"
+    ],
+    "individualElos": [
+      1610,
+      1643,
+      1655,
+      1627
+    ],
+    "date": "2021-07-24T16:29:20.000Z"
+  }
+]

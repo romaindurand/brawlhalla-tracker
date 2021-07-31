@@ -1,0 +1,29 @@
+
+> brawlhalla-tracker@1.0.0 dev
+> nodemon index.js --watch index.js --delay 800ms
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): index.js[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+server listening on http://localhost:4545
+New file detected : screenshots/20210724182917_1.jpg.
+Converting screenshot to png ...
+Conversion done.
+New file detected : screenshots/20210724182917_1.png.
+Analyzing screenshot ...
+File deleted : screenshots/20210724182917_1.jpg
+{
+  cropPaths: [
+    'temp_20210724182917_1Xb4HE0/crop0_20210724182917_1.png',
+    'temp_20210724182917_1Xb4HE0/crop1_20210724182917_1.png',
+    'temp_20210724182917_1Xb4HE0/crop2_20210724182917_1.png',
+    'temp_20210724182917_1Xb4HE0/crop3_20210724182917_1.png'
+  ]
+}
+undefined
+undefined
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+undefined
+undefined
