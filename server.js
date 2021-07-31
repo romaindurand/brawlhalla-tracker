@@ -1,15 +1,15 @@
-import fs from 'node:fs/promises'
-import { sep } from 'node:path'
-import { exec } from 'child_process'
-import jsonFile from 'jsonfile'
-// import os from 'node:os'
+const fs = require('node:fs/promises')
+const { sep } = require('node:path')
+const { exec } = require('child_process')
+const jsonFile = require('jsonfile')
+// const os = require('node:os')
 
-import express from 'express'
-import watch from 'node-watch'
-import jimp from 'jimp'
-import Tesseract from 'tesseract.js'
-import stringSimilarity from 'string-similarity'
-import { differenceInSeconds } from 'date-fns'
+const express = require('express')
+const watch = require('node-watch')
+const jimp = require('jimp')
+const Tesseract = require('tesseract.js')
+const stringSimilarity = require('string-similarity')
+const { differenceInSeconds } = require('date-fns')
 
 const app = express()
 // const tmpDir = os.tmpdir()
