@@ -1,4 +1,8 @@
 /node_modules/
-/screenshots/
+/screenshots/*.jpg
+/screenshots/*.png
 eng.traineddata
 /temp_*
+games.json
+/dist/
+/public/build/
