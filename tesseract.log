@@ -1,1 +1,1 @@
-{}
+{"message":"NamesParsing","stack":["Error: NamesParsing","    at getNames (C:\\Users\\Romain\\Documents\\GitHub\\brawlhalla-tracker\\lib\\parsing.js:70:13)","    at processTicksAndRejections (internal/process/task_queues.js:93:5)","    at async analyzeScreenshot (C:\\Users\\Romain\\Documents\\GitHub\\brawlhalla-tracker\\src\\main.js:101:17)","    at async Watcher.<anonymous> (C:\\Users\\Romain\\Documents\\GitHub\\brawlhalla-tracker\\src\\main.js:76:26)"]}

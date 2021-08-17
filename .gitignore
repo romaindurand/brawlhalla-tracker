@@ -6,3 +6,4 @@ eng.traineddata
 games.json
 /dist/
 /public/build/
+tesseract.log

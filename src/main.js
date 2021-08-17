@@ -30,14 +30,16 @@ const server = express()
 server.get('/games', async (req, res, next) => {
   const games = await getSavedGames()
   trackedPlayers.reduce((memo, trackedPlayer) => {
-    memo[trackedPlayer] = []
+    memo[trackedPlayer] = games.filter(savedGame => {
+      return savedGame.names.includes(trackedPlayer)
+    }).sort((a, b) => +Date(a.date) - +Date(b.date))
     return memo
   }, {})
   console.log({ games })
   res.send(games)
   // games.filter(game => {
   //   game.names.
-  // })
+  ////})
   next()
 })
 
@@ -81,12 +83,13 @@ watch('./screenshots', { recursive: false }, async function (evt, name) {
         stack: ex.stack.split('\n'),
       })
       console.log('Error while parsing screenshot, please retry.')
+      await fs.rm('eng.traineddata').catch(() => null)
+      console.log('Deleted eng.traineddata')
     }
   }
 })
 
 async function analyzeScreenshot(filePath) {
-  await fs.rm('eng.traineddata').catch(() => null)
   const fileName = filePath
     .replace('screenshots/', '')
     .replace('screenshots\\', '')
